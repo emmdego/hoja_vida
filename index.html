@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emmanuel Escudero Arango | Software Development Student</title>
+  <meta name="description" content="Resume website of Emmanuel Escudero Arango, Analysis and Software Development student at SENA, looking for an apprenticeship opportunity.">
+  <meta name="theme-color" content="#0a1220">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav__brand" href="#hero" aria-label="Emmanuel Escudero Arango, back to top">
+        <span class="nav__brand-mark" aria-hidden="true"></span>EEA
+      </a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__toggle-label">Menu</span>
+        <span class="nav__toggle-bars" aria-hidden="true"></span>
+      </button>
+      <ul class="nav__list" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#direction">Direction</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <!-- Decorative circuit/network graphic, recreated from the banner -->
+      <svg class="hero__art" viewBox="0 0 1200 640" preserveAspectRatio="xMaxYMid slice" aria-hidden="true" focusable="false">
+        <g class="art-rings" fill="none" stroke="currentColor">
+          <circle cx="170" cy="520" r="150" stroke-opacity=".25"/>
+          <circle cx="170" cy="520" r="105" stroke-opacity=".3" stroke-dasharray="4 6"/>
+          <circle cx="170" cy="520" r="62" stroke-opacity=".3"/>
+          <circle cx="170" cy="520" r="230" stroke-opacity=".14"/>
+          <path d="M20 520h300M170 370v300" stroke-opacity=".2" stroke-dasharray="3 7"/>
+        </g>
+        <g class="art-traces" fill="none" stroke="#2f7fe0" stroke-opacity=".55" stroke-width="1">
+          <path d="M470 392h300"/>
+          <path d="M520 470h300l60-60"/>
+          <path d="M700 520h180l50-50h270"/>
+          <path d="M640 560h360l40-40h160"/>
+          <path d="M760 600h300l50-50h90"/>
+        </g>
+        <g class="art-traces" fill="none" stroke="#8da2c0" stroke-opacity=".3" stroke-width="1">
+          <path d="M600 200h240M720 200v110"/>
+          <path d="M560 330h90"/>
+          <path d="M880 520h40l50-50h230"/>
+        </g>
+        <g class="art-network" fill="none" stroke="#3b9bff" stroke-opacity=".7" stroke-width="1.2">
+          <polyline points="780,395 850,352 900,282 972,150 1040,210 1080,262 1132,226 1190,170"/>
+          <polyline points="1080,262 1160,330 1100,380" stroke-opacity=".35"/>
+          <polyline points="900,282 960,330 1040,300 1132,226" stroke-opacity=".3"/>
+        </g>
+        <g class="art-nodes">
+          <circle class="node node--hi" cx="780" cy="395" r="6" fill="#3b9bff"/>
+          <circle class="node" cx="850" cy="352" r="4.5" fill="#3b9bff"/>
+          <circle class="node" cx="900" cy="282" r="5" fill="#3b9bff"/>
+          <circle class="node node--hi" cx="972" cy="150" r="6" fill="#3b9bff"/>
+          <circle class="node" cx="1040" cy="210" r="4" fill="#3b9bff"/>
+          <circle class="node" cx="1080" cy="262" r="4.5" fill="#3b9bff"/>
+          <circle class="node" cx="1132" cy="226" r="5" fill="#3b9bff"/>
+          <circle cx="1190" cy="170" r="3.5" fill="#9fb0c8"/>
+          <circle cx="960" cy="330" r="3.5" fill="#9fb0c8"/>
+          <circle cx="1160" cy="330" r="3" fill="#9fb0c8"/>
+          <circle cx="1100" cy="380" r="4" fill="#9fb0c8"/>
+          <circle cx="470" cy="392" r="3" fill="none" stroke="#9fb0c8"/>
+          <circle cx="600" cy="200" r="3" fill="none" stroke="#9fb0c8"/>
+          <circle cx="840" cy="200" r="3" fill="#9fb0c8"/>
+          <circle cx="520" cy="470" r="3" fill="none" stroke="#9fb0c8"/>
+          <circle cx="880" cy="520" r="4" fill="#3b9bff"/>
+          <circle cx="1090" cy="600" r="3" fill="none" stroke="#3b9bff"/>
+        </g>
+      </svg>
+
+      <div class="container hero__inner">
+        <p class="eyebrow">Software Development Student · SENA</p>
+        <h1 class="hero__title" id="hero-title">Emmanuel Escudero Arango</h1>
+        <p class="hero__headline">Analysis and Software Development student building strong foundations in backend engineering.</p>
+        <p class="hero__intro">
+          I learn every technology from its foundations and document what I learn along the way.
+          I am in the academic stage of my program and looking for an apprenticeship where I can
+          contribute what I have learned while continuing to grow professionally.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">View projects</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          <a class="btn btn--ghost" data-contact="github" href="#" target="_blank" rel="noopener noreferrer" hidden>GitHub</a>
+          <a class="btn btn--ghost" data-contact="linkedin" href="https://www.linkedin.com/in/emmanuel-escudero/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">01 · About</p>
+          <h2 id="about-title">About me</h2>
+        </header>
+        <div class="two-col">
+          <div class="prose">
+            <p>
+              I'm currently studying Analysis and Software Development at SENA. I am in the academic
+              stage and looking for an apprenticeship opportunity that would let me continue my studies
+              and move into the productive stage, where I can apply what I have learned while growing
+              professionally.
+            </p>
+            <p>
+              My first programming language was Python, and alongside it I studied Object-Oriented
+              Programming, SOLID principles, and Clean Architecture. That gave me a solid mental model of
+              software design that I now apply to every new technology I learn.
+            </p>
+          </div>
+          <aside class="panel" aria-label="Current focus">
+            <h3 class="panel__title">Current focus</h3>
+            <ul class="tag-list">
+              <li>Backend development</li>
+              <li>SQL databases</li>
+              <li>Cybersecurity foundations</li>
+            </ul>
+            <p class="panel__note">
+              These areas are connected by an interest in good software design and architecture,
+              particularly SOLID and the Single Responsibility Principle.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNING PHILOSOPHY -->
+    <section class="section section--alt" id="philosophy" aria-labelledby="philosophy-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">02 · Approach</p>
+          <h2 id="philosophy-title">Learning philosophy</h2>
+        </header>
+        <div class="two-col">
+          <div class="prose">
+            <p>
+              I approach every technology, system, or programming language from its foundations,
+              documenting key ideas along the way. My goal is to build strong foundations, understand
+              concepts instead of memorizing them, and reach the point where I can explain what I have
+              learned to someone else in a clear and simple way.
+            </p>
+            <p>
+              I also document my practice scripts with comments and key ideas, so I can review what I
+              learned and refresh my understanding if I ever forget something. Once the foundation is
+              solid, I go deeper into more specific concepts and connect them with what I already know.
+            </p>
+          </div>
+          <details class="disclosure">
+            <summary>
+              <span>My learning path</span>
+              <span class="disclosure__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="disclosure__body">
+              <p>
+                I started with Python, which I believe was a good starting point. Alongside it I learned
+                Object-Oriented Programming, SOLID principles, and Clean Architecture, which gave me a
+                foundation in software design and architecture.
+              </p>
+              <p>
+                I now use these principles when learning new technologies, and I increasingly recognize
+                similar ideas in other well-designed systems. That helps me understand new concepts
+                faster and connect them with existing knowledge.
+              </p>
+              <p>
+                I document and comment my process using Git and save it to GitHub.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">03 · Skills</p>
+          <h2 id="skills-title">Technical skills</h2>
+        </header>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <ul class="tag-list"><li>Python</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Databases</h3>
+            <ul class="tag-list"><li>SQL</li><li>MySQL</li><li>PostgreSQL</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Software design</h3>
+            <ul class="tag-list"><li>Object-Oriented Programming</li><li>SOLID principles</li><li>Clean Architecture</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <ul class="tag-list"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Bootstrap</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools and environment</h3>
+            <ul class="tag-list"><li>Git &amp; GitHub</li><li>Linux</li><li>VS Code</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--alt" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">04 · Work</p>
+          <h2 id="projects-title">Projects and achievements</h2>
+        </header>
+
+        <article class="feature">
+          <div class="feature__badge">Hackathon · First place</div>
+          <h3 class="feature__title">VisionVial</h3>
+          <p>
+            A project I worked on and participated in that won first place at a hackathon.
+          </p>
+          <a class="link-arrow" href="https://github.com/Emmanuel-ui-oss/hackaton" target="_blank" rel="noopener noreferrer">
+            View repository <span class="visually-hidden">for VisionVial on GitHub</span><span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <h3 class="subhead" id="learning-repos">Learning and documentation repositories</h3>
+        <p class="subhead__lead">
+          These repositories hold documentation, practice, and examples from different stages of my learning process.
+        </p>
+        <ul class="repo-grid" aria-labelledby="learning-repos">
+          <li><a class="repo" href="https://github.com/emmdego/python-oop-solid" target="_blank" rel="noopener noreferrer">
+            <span class="repo__name">Python, OOP &amp; SOLID</span><span class="repo__tech">Python</span></a></li>
+          <li><a class="repo" href="https://github.com/emmdego/Git" target="_blank" rel="noopener noreferrer">
+            <span class="repo__name">Git &amp; GitHub</span><span class="repo__tech">Git</span></a></li>
+          <li><a class="repo" href="https://github.com/emmdego/javascript-essentials" target="_blank" rel="noopener noreferrer">
+            <span class="repo__name">JavaScript Essentials</span><span class="repo__tech">JavaScript</span></a></li>
+          <li><a class="repo" href="https://github.com/emmdego/frontend-basics" target="_blank" rel="noopener noreferrer">
+            <span class="repo__name">Frontend Basics</span><span class="repo__tech">HTML · CSS · JavaScript</span></a></li>
+          <li><a class="repo" href="https://github.com/emmdego/sql-query-practice" target="_blank" rel="noopener noreferrer">
+            <span class="repo__name">SQL</span><span class="repo__tech">SQL</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">05 · Education</p>
+          <h2 id="education-title">Education</h2>
+        </header>
+        <div class="timeline">
+          <div class="timeline__item">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <p class="timeline__status">In progress</p>
+            <h3>Analysis and Software Development</h3>
+            <p class="timeline__meta">SENA</p>
+            <p>
+              Currently in the academic stage and seeking an apprenticeship to move into the
+              productive stage of the program.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LONG-TERM DIRECTION -->
+    <section class="section section--alt" id="direction" aria-labelledby="direction-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">06 · Direction</p>
+          <h2 id="direction-title">Long-term direction</h2>
+        </header>
+        <div class="two-col">
+          <div class="prose">
+            <p>
+              I want to develop strong backend engineering expertise that does not depend on a specific
+              technology, but is based on software design and architecture principles that adapt to
+              different environments.
+            </p>
+            <p>
+              I will keep deepening my understanding of SOLID and Clean Architecture and learn to apply
+              them across different technologies.
+            </p>
+          </div>
+          <div class="prose">
+            <p>
+              I am also interested in cybersecurity as another area of software engineering: a different
+              but complementary field that I want to understand more deeply as my foundations grow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">07 · Contact</p>
+          <h2 id="contact-title">Let's connect</h2>
+        </header>
+        <p class="contact__lead">
+          I'm looking for an apprenticeship opportunity where I can contribute and keep growing.
+          If you think I could be a fit for your team, I'd be glad to hear from you.
+        </p>
+        <ul class="contact__list">
+          <!--
+            Contact details are set in script.js (CONTACT object).
+            Links stay hidden until a value is provided.
+          -->
+          <li data-contact-item="email" hidden>
+            <span class="contact__label">Email</span>
+            <a class="contact__link" data-contact="email" href="#"></a>
+          </li>
+          <li data-contact-item="github" hidden>
+            <span class="contact__label">GitHub</span>
+            <a class="contact__link" data-contact="github" href="#" target="_blank" rel="noopener noreferrer"></a>
+          </li>
+          <li>
+            <span class="contact__label">LinkedIn</span>
+            <a class="contact__link" data-contact="linkedin" href="https://www.linkedin.com/in/emmanuel-escudero/" target="_blank" rel="noopener noreferrer">linkedin.com/in/emmanuel-escudero</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span id="year">2026</span> Emmanuel Escudero Arango</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
