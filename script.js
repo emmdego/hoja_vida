@@ -92,6 +92,21 @@ document.addEventListener("DOMContentLoaded", () => {
   applyContact();
   setupMenu();
   setupActiveLink();
+     // Print the CV or open the browser's Save as PDF dialog.
+  const printButton = document.getElementById("print-cv");
+  const downloadButton = document.getElementById("download-cv");
+
+  if (printButton) {
+    printButton.addEventListener("click", () => {
+      window.print();
+    });
+  }
+
+  if (downloadButton) {
+    downloadButton.addEventListener("click", () => {
+      window.print();
+    });
+  }
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 });
