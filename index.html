@@ -11,7 +11,6 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Main navigation">
       <a class="nav__brand" href="#hero" aria-label="Emmanuel Escudero Arango, back to top">
@@ -32,9 +31,7 @@
       </ul>
     </nav>
   </header>
-
   <main id="main">
-
     <!-- HERO -->
     <section class="hero" id="hero" aria-labelledby="hero-title">
       <!-- Decorative circuit/network graphic, recreated from the banner -->
@@ -83,10 +80,20 @@
           <circle cx="1090" cy="600" r="3" fill="none" stroke="#3b9bff"/>
         </g>
       </svg>
-
       <div class="container hero__inner">
-        <p class="eyebrow">Software Development Student · SENA</p>
-        <h1 class="hero__title" id="hero-title">Emmanuel Escudero Arango</h1>
+        <div class="hero__identity">
+          <img
+            class="hero__profile"
+            src="profile.jpg"
+            alt="Profile photo of Emmanuel Escudero Arango"
+            width="160"
+            height="160"
+          >
+          <div class="hero__identity-text">
+            <p class="eyebrow">Software Development Student · SENA</p>
+            <h1 class="hero__title" id="hero-title">Emmanuel Escudero Arango</h1>
+          </div>
+        </div>
         <p class="hero__headline">Analysis and Software Development student building strong foundations in backend engineering.</p>
         <p class="hero__intro">
           I learn every technology from its foundations and document what I learn along the way.
@@ -98,10 +105,11 @@
           <a class="btn btn--ghost" href="#contact">Get in touch</a>
           <a class="btn btn--ghost" data-contact="github" href="#" target="_blank" rel="noopener noreferrer" hidden>GitHub</a>
           <a class="btn btn--ghost" data-contact="linkedin" href="https://www.linkedin.com/in/emmanuel-escudero/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <button class="btn btn--primary" id="print-cv" type="button">Print CV</button>
+          <button class="btn btn--ghost" id="download-cv" type="button">Download CV (PDF)</button>
         </div>
       </div>
     </section>
-
     <!-- ABOUT -->
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="container">
@@ -138,7 +146,6 @@
         </div>
       </div>
     </section>
-
     <!-- LEARNING PHILOSOPHY -->
     <section class="section section--alt" id="philosophy" aria-labelledby="philosophy-title">
       <div class="container">
@@ -184,7 +191,6 @@
         </div>
       </div>
     </section>
-
     <!-- SKILLS -->
     <section class="section" id="skills" aria-labelledby="skills-title">
       <div class="container">
@@ -216,7 +222,6 @@
         </div>
       </div>
     </section>
-
     <!-- PROJECTS -->
     <section class="section section--alt" id="projects" aria-labelledby="projects-title">
       <div class="container">
@@ -224,7 +229,6 @@
           <p class="eyebrow">04 · Work</p>
           <h2 id="projects-title">Projects and achievements</h2>
         </header>
-
         <article class="feature">
           <div class="feature__badge">Hackathon · First place</div>
           <h3 class="feature__title">VisionVial</h3>
@@ -235,7 +239,6 @@
             View repository <span class="visually-hidden">for VisionVial on GitHub</span><span aria-hidden="true">→</span>
           </a>
         </article>
-
         <h3 class="subhead" id="learning-repos">Learning and documentation repositories</h3>
         <p class="subhead__lead">
           These repositories hold documentation, practice, and examples from different stages of my learning process.
@@ -254,7 +257,6 @@
         </ul>
       </div>
     </section>
-
     <!-- EDUCATION -->
     <section class="section" id="education" aria-labelledby="education-title">
       <div class="container">
@@ -276,7 +278,6 @@
         </div>
       </div>
     </section>
-
     <!-- LONG-TERM DIRECTION -->
     <section class="section section--alt" id="direction" aria-labelledby="direction-title">
       <div class="container">
@@ -305,7 +306,6 @@
         </div>
       </div>
     </section>
-
     <!-- CONTACT -->
     <section class="section contact" id="contact" aria-labelledby="contact-title">
       <div class="container">
@@ -338,7 +338,6 @@
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <p>© <span id="year">2026</span> Emmanuel Escudero Arango</p>
